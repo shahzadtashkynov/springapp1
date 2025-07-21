@@ -15,7 +15,7 @@ public class TestSpring {
 		
 		boolean cmp = firstmusicPlayer == secondMusicPlayer ;
 		
-		System.out.println(cmp);
+		System.out.println(cmp); 
 
 		System.out.println(firstmusicPlayer); 
 		System.out.println(secondMusicPlayer); 
