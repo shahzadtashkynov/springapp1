@@ -13,6 +13,8 @@ public class TestSpring {
 		ClassicalMusic newClassicalMusic = context.getBean("classicalMusicBean", ClassicalMusic.class); 
 		System.out.println(newClassicalMusic.getSong()); 
 		
+		ClassicalMusic cmusic = ClassicalMusic.getClassicalMusic();
+		System.out.println(cmusic.getSong());
 		
 //		Music music = context.getBean("musicBean", Music.class);
 //		MusicPlayer musicPlayer = new MusicPlayer(music);
