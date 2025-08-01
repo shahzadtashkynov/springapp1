@@ -12,7 +12,7 @@
         class="tm.shtashkynov.springcourse.ClassicalMusic"
         scope="prototype"
         init-method="doMyInit"
-        factory-method = "getClasssicalMusic"
+        factory-method = "getClassicalMusic"
         destroy-method="doMyDestroy">
     </bean>
     
