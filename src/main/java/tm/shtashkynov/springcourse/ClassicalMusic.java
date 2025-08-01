@@ -16,7 +16,6 @@ public class ClassicalMusic implements Music {
 		System.out.println("Doing my destruction for ClassicalMusic");
 	}
 	
-	
 	@Override 
 	public String getSong() {
 		return "Hungarian rapsody "; 
