@@ -14,6 +14,10 @@ public class TestSpring {
 		
 		musicPlayer.playMusic(); 
 		
+		Music secondMusic = context.getBean("rapMusic", Music.class ); 
+		musicPlayer.setMusic( secondMusic );
+		
+		musicPlayer.playMusic(); 
 		
 		
 		context.close();
