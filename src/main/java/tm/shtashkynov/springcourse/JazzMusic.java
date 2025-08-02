@@ -1,6 +1,5 @@
 package tm.shtashkynov.springcourse;
 
-import org.springframework.stereotype.Component;
 
 public class JazzMusic implements Music {
 

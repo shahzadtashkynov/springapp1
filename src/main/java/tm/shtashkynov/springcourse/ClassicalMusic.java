@@ -3,10 +3,7 @@ package tm.shtashkynov.springcourse;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
-@Component
 public class ClassicalMusic implements Music {
 
 	@Override 
