@@ -15,10 +15,8 @@ public class TestSpring {
 //		System.out.println( musicPlayer.getVolume() );
 		
 		ClassicalMusic classicalMusic = context.getBean("classicalMusic", ClassicalMusic.class);
-		ClassicalMusic classicalMusic2 = context.getBean("classicalMusic", ClassicalMusic.class);
-		
-		System.out.println(classicalMusic == classicalMusic2); // true, singleton scope
-		
+
+		System.out.println(classicalMusic.getSong());
 		
 		context.close();
 	}
