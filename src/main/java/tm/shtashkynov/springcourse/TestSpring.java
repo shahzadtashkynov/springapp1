@@ -1,18 +1,18 @@
   package tm.shtashkynov.springcourse;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+  import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+  
 public class TestSpring {
 	public static void main (String[] args ) {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-				"applicationContext.xml");
+		AnnotationConfigApplicationContext  context = 
+				new AnnotationConfigApplicationContext( SpringConfig.class);
 
-//		Computer computer1 = context.getBean("computer", Computer.class); 
-//		System.out.println( computer1 );
+		Computer computer1 = context.getBean("computer", Computer.class); 
+		System.out.println( computer1 );
 		
-//		MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-//		System.out.println( musicPlayer.getName() ); 
-//		System.out.println( musicPlayer.getVolume() );
+		MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+		System.out.println( musicPlayer.getName() ); 
+		System.out.println( musicPlayer.getVolume() );
 		
 		ClassicalMusic classicalMusic = context.getBean("classicalMusic", ClassicalMusic.class);
 
