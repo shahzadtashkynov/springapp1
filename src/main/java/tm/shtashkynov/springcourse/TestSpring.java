@@ -7,7 +7,6 @@ public class TestSpring {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				"applicationContext.xml");
 
-
 		Computer computer1 = context.getBean("computer", Computer.class); 
 		
 		System.out.println( computer1 );
